@@ -1,1 +1,7 @@
-const userOne = {}  //Object Literals
+const userOne = {
+
+    email: 'brian@techfybiz.co.ke',
+                                            // incapsulation
+    name: 'Brian'
+
+}  
