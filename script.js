@@ -1,0 +1,1 @@
+const userOne = {}  //Object Literals
