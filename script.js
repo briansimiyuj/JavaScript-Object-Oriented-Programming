@@ -24,5 +24,10 @@ const userOne = {
 
 
 
-userOne.login()
-userOne.logout()
+userOne.name = 'Mike'
+
+console.log(userOne.name)  
+
+userOne['email'] = 'michaelwafulaj@gmail.com' 
+
+console.log(userOne.email) 
