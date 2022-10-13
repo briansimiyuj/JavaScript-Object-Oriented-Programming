@@ -24,10 +24,6 @@ const userOne = {
 
 
 
-userOne.name = 'Mike'
+userOne.age = 26
 
-console.log(userOne.name)  
-
-userOne['email'] = 'michaelwafulaj@gmail.com' 
-
-console.log(userOne.email) 
+console.log(userOne.age) 
