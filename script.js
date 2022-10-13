@@ -10,9 +10,9 @@ const userOne = {
 
         console.log(this.email, 'has logged in')      
 
-    }
+    },
 
-                                                    //This refers to userOne object
+
 
     logout(){
 
@@ -21,3 +21,8 @@ const userOne = {
     }
 
 }  
+
+
+
+userOne.login()
+userOne.logout()
