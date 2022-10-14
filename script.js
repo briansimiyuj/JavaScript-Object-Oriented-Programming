@@ -1,29 +1,14 @@
-const userOne = {
+class User{
 
-    email: 'brian@techfybiz.co.ke',
-    
-    name: 'Brian',
+    constructor(email, name){
 
+        this.email = email
 
+                                    // Constructor function creates a new object 
 
-    login(){
-
-        console.log(this.email, 'has logged in')      
-
-    },
-
-
-
-    logout(){
-
-        console.log(this.email, 'has logged out')
+        this.name = name
 
     }
 
-}  
+}
 
-
-
-userOne.age = 26
-
-console.log(userOne.age) 
