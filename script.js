@@ -1,69 +1,20 @@
-class User{
+function User(email, name) {
+    
+    this.email = email
 
-    constructor(email, name){
+    this.name = name
 
-        this.email = email
-
-        this.name = name
-
-        this.score = 0        
-
-    }
+    this.online = false
 
 
+    this.login = function(){
 
-    login(){
-
-        console.log(this.email, 'just logged in')
-
-        return this
-
-    }
-
-
-
-    logout(){
-
-        console.log(this.email, 'just logged out')
-
-        return this
-
-    }
-
-
-
-    updateScore(){
-
-        this.score++
-
-        console.log(this.email, 'score is now', this.score)
-
-        return this
+        console.log(this.email, 'has logged in')
 
     }
 
 }
 
-
-
-
-
-class Admin extends User{
-
-    deleteUser(user){
-
-        users = users.filter(u =>{
-
-            console.log('working')
-
-            return u.email != user.email
-
-
-        })      
-
-    }
-
-}
 
 
 
@@ -71,11 +22,7 @@ const userOne = new User('brian@techfybiz.co.ke', 'Brian')
 
 const userTwo = new User('michaelwafulaj@gmail.com', 'Mike')
 
-const admin = new Admin('bsimiyuj@gmail.com', 'Brayo')
 
+console.log(userOne)
 
-let users = [userOne, userTwo, admin]
-
-admin.deleteUser(userTwo)
-
-console.log(users)
+userTwo.login()
