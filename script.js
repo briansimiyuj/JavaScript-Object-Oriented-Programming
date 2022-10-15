@@ -30,10 +30,20 @@ User.prototype.logout = function(){
 
 
 
+function Admin(...args) {
+    
+    console.log(args)
+
+}
+
+
+
 
 const userOne = new User('brian@techfybiz.co.ke', 'Brian')
 
 const userTwo = new User('michaelwafulaj@gmail.com', 'Mike')
+
+const admin = new Admin('bsimiyuj@gmail.com', 'Brayo');
 
 
 console.log(userOne)
