@@ -32,7 +32,24 @@ User.prototype.logout = function(){
 
 function Admin(...args) {
     
-    console.log(args)
+    User.apply(this, args)
+
+    this.role = 'super admin'
+
+}
+
+
+
+Admin.prototype = Object.create(User.prototype)
+
+
+Admin.prototype.deleteUser = function(u){
+
+    users = users.filter(user =>{
+
+        return user.email != u.email
+
+    })
 
 }
 
@@ -45,7 +62,11 @@ const userTwo = new User('michaelwafulaj@gmail.com', 'Mike')
 
 const admin = new Admin('bsimiyuj@gmail.com', 'Brayo');
 
+let users = [userOne, userTwo, admin]
 
-console.log(userOne)
 
-userTwo.login()
+console.log(admin)
+
+admin.deleteUser(users[1])
+
+console.log(users)
