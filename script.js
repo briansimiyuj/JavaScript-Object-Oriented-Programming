@@ -45,9 +45,37 @@ class User{
 }
 
 
+
+
+
+class Admin extends User{
+
+    deleteUser(user){
+
+        users = users.filter(u =>{
+
+            console.log('working')
+
+            return u.email != user.email
+
+
+        })      
+
+    }
+
+}
+
+
+
 const userOne = new User('brian@techfybiz.co.ke', 'Brian')
 
 const userTwo = new User('michaelwafulaj@gmail.com', 'Mike')
 
+const admin = new Admin('bsimiyuj@gmail.com', 'Brayo')
 
-userOne.login().updateScore().updateScore().logout()
+
+let users = [userOne, userTwo, admin]
+
+admin.deleteUser(userTwo)
+
+console.log(users)
