@@ -8,6 +8,22 @@ class User{
 
     }
 
+
+
+    login(){
+
+        console.log(this.email, 'just logged in')
+
+    }
+
+
+
+    logout(){
+
+        console.log(this.email, 'just logged out')
+
+    }
+
 }
 
 
@@ -15,13 +31,7 @@ const userOne = new User('brian@techfybiz.co.ke', 'Brian')
 
 const userTwo = new User('michaelwafulaj@gmail.com', 'Mike')
 
-console.log(userOne, userTwo)
 
+userOne.login()
 
-// New keyword
-
-// Creates a new empty object {}
-
-// Sets the value of 'this' to be the new empty object 
-
-// Calls the constructor method
+userTwo.logout()
