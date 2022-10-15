@@ -6,6 +6,8 @@ class User{
 
         this.name = name
 
+        this.score = 0        
+
     }
 
 
@@ -14,6 +16,8 @@ class User{
 
         console.log(this.email, 'just logged in')
 
+        return this
+
     }
 
 
@@ -21,6 +25,20 @@ class User{
     logout(){
 
         console.log(this.email, 'just logged out')
+
+        return this
+
+    }
+
+
+
+    updateScore(){
+
+        this.score++
+
+        console.log(this.email, 'score is now', this.score)
+
+        return this
 
     }
 
@@ -32,6 +50,4 @@ const userOne = new User('brian@techfybiz.co.ke', 'Brian')
 const userTwo = new User('michaelwafulaj@gmail.com', 'Mike')
 
 
-userOne.login()
-
-userTwo.logout()
+userOne.login().updateScore().updateScore().logout()
